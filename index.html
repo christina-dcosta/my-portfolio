@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f5f1ea">
+<title>Christina Maria D’costa | Marketing & Client Services Portfolio</title>
+<style>
+:root{
+  --bg:#f8f7f4;--paper:#fff;--ink:#20211f;--muted:#77766f;--line:#e8e5df;
+  --accent:#b56d4b;--accent-soft:#efe3db;--olive:#e8e9e0;--serif:"Iowan Old Style",Baskerville,Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Helvetica Neue",Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.wrap{width:min(1080px,calc(100% - 48px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(248,247,244,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{font-size:.98rem;font-weight:650;letter-spacing:-.04em}.brand span{color:var(--accent)}
+nav{display:flex;align-items:center;gap:27px;font-size:.78rem;color:#65655f}
+nav a{transition:color .2s}nav a:hover{color:var(--accent)}
+.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;border:1px solid #d6d2ca;border-radius:3px;padding:10px 15px;font-size:.78rem;font-weight:600;transition:all .2s;cursor:pointer;background:transparent;color:var(--ink)}
+.nav-cta:hover,.button:hover{border-color:var(--ink);background:var(--ink);color:white}
+.menu-toggle{display:none;background:none;border:1px solid var(--line);border-radius:3px;width:40px;height:40px}
+.hero{padding:88px 0 86px}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:76px;align-items:center}
+.eyebrow{font-size:.69rem;font-weight:650;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);display:flex;align-items:center;gap:10px}
+.eyebrow:before{content:"";width:23px;height:1px;background:var(--accent)}
+h1{font-size:clamp(3.4rem,7vw,6.1rem);letter-spacing:-.075em;line-height:.97;font-weight:500;margin:27px 0 22px}
+h1 em{font-family:var(--serif);font-weight:400;color:var(--accent);letter-spacing:-.07em}
+.hero-copy{max-width:500px;color:var(--muted);font-size:1rem;line-height:1.8}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.button.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+.button.primary:hover{background:var(--accent);border-color:var(--accent)}
+.hero-art{position:relative;min-height:420px;display:grid;place-items:center}
+.art-circle{position:absolute;width:min(330px,90%);aspect-ratio:1;border-radius:50%;background:var(--olive);right:4%;top:6%}
+.art-card{position:relative;z-index:1;width:min(315px,88%);min-height:370px;background:#fdfcf9;border:1px solid #e2ded5;padding:25px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 22px 50px rgba(50,44,34,.07)}
+.art-top{display:flex;justify-content:space-between;align-items:center;font-size:.63rem;letter-spacing:.09em;color:var(--muted)}
+.monogram{width:112px;height:112px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-family:var(--serif);font-size:3.3rem;letter-spacing:-.08em;margin:22px auto}
+.art-card h2{font-family:var(--serif);font-weight:400;font-size:2rem;line-height:1.05;letter-spacing:-.04em;margin:0}
+.art-card p{font-size:.77rem;color:var(--muted);margin-bottom:0}
+.sticker{position:absolute;right:-7px;bottom:32px;z-index:2;background:var(--accent);color:white;width:94px;height:94px;border-radius:50%;display:grid;place-items:center;text-align:center;font-family:var(--serif);font-size:1rem;line-height:1.12;transform:rotate(7deg)}
+.section{padding:78px 0;border-top:1px solid var(--line)}
+.section-head{display:grid;grid-template-columns:.58fr 1.42fr;gap:44px;margin-bottom:38px;align-items:start}
+.kicker{font-size:.68rem;font-weight:650;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);padding-top:8px}
+h2.section-title{font-family:var(--serif);font-weight:400;font-size:clamp(2.15rem,4.2vw,3.65rem);letter-spacing:-.055em;line-height:1.08;margin:0;max-width:780px}
+.section-intro{max-width:640px;color:var(--muted);font-size:.93rem;line-height:1.8;margin:15px 0 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.panel{padding:27px;background:var(--paper);border:1px solid var(--line)}
+.panel p{margin:0;color:var(--muted);font-size:.92rem}.panel strong{color:var(--ink);font-weight:650}
+.pill-row{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}
+.pill{border:1px solid var(--line);padding:5px 10px;border-radius:2px;font-size:.72rem;color:#5f5d57}
+.capabilities{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.capability{padding:21px 19px;min-height:190px;background:transparent;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}
+.capability .num{font-family:var(--serif);font-size:1.35rem;color:var(--accent)}
+.capability h3{font-size:1rem;line-height:1.25;letter-spacing:-.025em;margin:24px 0 8px;font-weight:650}
+.capability p{font-size:.82rem;line-height:1.65;color:var(--muted);margin:0}
+.experience{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
+.job{padding:24px;background:var(--paper);border:1px solid var(--line)}
+.job-top{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
+.job h3{margin:0;font-size:1.08rem;letter-spacing:-.03em;font-weight:650}
+.company{color:var(--accent);font-size:.86rem;font-weight:600;margin-top:4px}
+.date{font-size:.69rem;color:var(--muted);white-space:nowrap;text-align:right;padding-top:4px}
+.job ul{padding-left:17px;color:var(--muted);font-size:.82rem;line-height:1.7;margin:15px 0 0}
+.job li+li{margin-top:5px}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.project{min-height:290px;padding:25px;position:relative;overflow:hidden;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.project:nth-child(2){background:#f0f1eb}.project:nth-child(3){background:#f3ede9}.project:nth-child(4){background:#f7f2eb}
+.project-art{position:absolute;right:-18px;top:12px;width:135px;height:135px;border:1px solid rgba(181,109,75,.27);border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:2.8rem;color:rgba(181,109,75,.65)}
+.project-art:after{content:"";position:absolute;width:72%;height:72%;border:1px solid rgba(181,109,75,.25);border-radius:50%}
+.project .project-label{font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;font-weight:650;color:var(--accent)}
+.project h3{position:relative;z-index:1;font-family:var(--serif);font-weight:400;font-size:1.8rem;line-height:1.08;letter-spacing:-.045em;max-width:285px;margin:48px 0 9px}
+.project p{position:relative;z-index:1;max-width:360px;color:#6d6a64;font-size:.84rem;line-height:1.7}
+.project small{font-size:.71rem;color:#77736c;display:block;margin-top:14px;line-height:1.55}
+.note{font-size:.78rem;color:var(--muted);margin-top:15px}
+.process{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:var(--paper)}
+.step{padding:21px;background:transparent;border-right:1px solid var(--line)}
+.step:last-child{border-right:0}
+.step .step-no{font-family:var(--serif);font-size:1.8rem;color:var(--accent)}
+.step h3{margin:16px 0 7px;font-size:.95rem;font-weight:650}
+.step p{font-size:.8rem;line-height:1.7;color:var(--muted);margin:0}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.skills-grid h3{font-size:1.1rem;letter-spacing:-.03em;font-weight:650}
+.skill-list{display:flex;flex-wrap:wrap;gap:8px}
+.skill{background:var(--paper);border:1px solid var(--line);padding:8px 11px;font-size:.78rem;color:#5f5d57}
+.education-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.edu{padding:23px;background:var(--paper);border:1px solid var(--line)}
+.edu .year{color:var(--accent);font-size:.67rem;font-weight:650;letter-spacing:.1em;text-transform:uppercase}
+.edu h3{margin:9px 0 4px;letter-spacing:-.025em;font-size:1rem;font-weight:650}
+.edu p{margin:0;color:var(--muted);font-size:.83rem;line-height:1.7}
+.contact{background:#252622;color:#f8f7f4;padding:70px 0}
+.contact-grid{display:grid;grid-template-columns:1fr auto;gap:35px;align-items:end}
+.contact h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.7rem,5.5vw,4.8rem);line-height:.98;letter-spacing:-.06em;margin:17px 0;max-width:700px}
+.contact p{color:#c2c0b8;max-width:510px;font-size:.9rem}
+.contact .eyebrow{color:#d6a48d}.contact .eyebrow:before{background:#d6a48d}
+.contact-links{display:flex;flex-direction:column;gap:12px;font-size:.8rem;color:#e4e1d9}
+.contact-links a{border-bottom:1px solid #55564f;padding-bottom:8px}
+.contact-links a:hover{color:#d6a48d}
+footer{padding:20px 0;font-size:.72rem;color:var(--muted);display:flex;justify-content:space-between;gap:15px}
+.reveal{opacity:0;transform:translateY(12px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:850px){
+ nav{gap:13px}nav a{display:none}.menu-toggle{display:block}.nav-cta{display:none}
+ nav.open{position:absolute;top:71px;left:0;right:0;padding:18px 24px;background:var(--bg);border-bottom:1px solid var(--line);display:flex;flex-direction:column;align-items:flex-start}
+ nav.open a{display:block}
+ .hero-grid{grid-template-columns:1fr;gap:20px}.hero{padding-top:60px}.hero-art{min-height:380px}
+ .section-head{grid-template-columns:1fr;gap:12px}.capabilities{grid-template-columns:repeat(2,1fr)}
+ .process{grid-template-columns:repeat(2,1fr)}.step:nth-child(2){border-right:0}.step:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .contact-grid{grid-template-columns:1fr}.contact-links{max-width:420px}
+}
+@media(max-width:580px){
+ .wrap{width:min(100% - 30px,1080px)}.hero{padding:48px 0}.hero-art{min-height:340px}
+ .art-card{min-height:310px}.monogram{width:96px;height:96px;font-size:2.8rem}
+ .section{padding:58px 0}.about-grid,.experience,.project-grid,.skills-grid,.education-grid{grid-template-columns:1fr}
+ .capabilities{grid-template-columns:1fr 1fr;gap:8px}.capability{padding:15px;min-height:185px}
+ .job-top{display:block}.date{text-align:left;margin-top:7px}.project{min-height:270px;padding:21px}
+ .process{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}
+ footer{flex-direction:column}.contact{padding:56px 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+@media print{
+ header,.hero-actions,.menu-toggle{display:none!important}body{background:white}.hero,.section,.contact{padding:25px 0}
+ .reveal{opacity:1;transform:none}.contact{background:white;color:black}.contact p,.contact-links{color:#333}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">Christina <span>Maria.</span></a>
+    <nav id="nav">
+      <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#work">Selected Work</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Let’s connect ↗</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <div class="eyebrow">Marketing · Client Services · Business Development</div>
+      <h1>People first.<br><em>Ideas forward.</em></h1>
+      <p class="hero-copy">I’m Christina Maria D’costa — a client-focused professional who brings together communication, research, coordination, and commercial thinking to help teams move work forward.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#work">Explore my work ↓</a>
+        <a class="button secondary" href="#contact">Get in touch ↗</a>
+        <button class="button secondary" onclick="window.print()">Print / Save PDF ↗</button>
+      </div>
+    </div>
+    <div class="hero-art reveal" aria-label="Abstract portfolio cover artwork">
+      <div class="art-circle"></div>
+      <div class="art-card">
+        <div class="art-top"><span>PORTFOLIO / 2026</span><span>01—09</span></div>
+        <div>
+          <div class="monogram">CM</div>
+          <h2>Christina<br>Maria D’costa</h2>
+          <p>Curiosity, communication & thoughtful execution.</p>
+        </div>
+        <div class="art-top"><span>DHAKA, BANGLADESH</span><span>↗</span></div>
+      </div>
+      <div class="sticker">Make<br>connections<br>matter.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">01 / A little about me</div>
+      <div><h2 class="section-title">Connecting the dots between people, projects & possibilities.</h2>
+      <p class="section-intro">My experience spans digital agency client services, international education counseling, sales, and healthcare business development. Across these roles, I’ve supported client relationships, researched opportunities, organized requirements, and coordinated people and processes.</p></div>
+    </div>
+    <div class="about-grid reveal">
+      <div class="panel"><p><strong>My approach</strong><br><br><b>I TAKE OWNERSHIP. I DELIVER RESULTS.</b><br>I bring clarity to complexity, turn ideas into action, and keep every detail moving toward the goal.</p></div>
+      <div class="panel"><p><strong>What I bring</strong><br><br>A mix of commercial awareness, structured follow-up, stakeholder coordination, and a practical, people-first approach to getting things done.</p>
+        <div class="pill-row"><span class="pill">Client communication</span><span class="pill">Research</span><span class="pill">Coordination</span><span class="pill">Reporting</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="expertise">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="kicker">02 / What I do</div><div><h2 class="section-title">A versatile skill set for work that needs both people and process.</h2><p class="section-intro">I’m most effective where clear communication, thoughtful planning, and consistent execution come together.</p></div></div>
+    <div class="capabilities">
+      <article class="capability reveal"><span class="num">01</span><div><h3>Client Services</h3><p>Account communication, requirement gathering, project briefs, and stakeholder alignment.</p></div></article>
+      <article class="capability reveal"><span class="num">02</span><div><h3>Marketing Support</h3><p>Promotional coordination, outreach support, and helping teams organize campaign deliverables.</p></div></article>
+      <article class="capability reveal"><span class="num">03</span><div><h3>Research & Growth</h3><p>Lead research, prospecting, competitive analysis, and partnership opportunity identification.</p></div></article>
+      <article class="capability reveal"><span class="num">04</span><div><h3>Project & Event Coordination</h3><p>Timelines, logistics, team coordination, documentation, and progress tracking.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="kicker">03 / Experience</div><div><h2 class="section-title">Learning by doing, across different industries.</h2><p class="section-intro">A snapshot of roles where I’ve contributed to client experience, sales support, research, and coordination.</p></div></div>
+    <div class="experience">
+      <article class="job reveal"><div class="job-top"><div><h3>Client Services Executive</h3><div class="company">Potato Digital</div></div><div class="date">Jun 2026 – Present</div></div><ul><li>Manage client accounts, stakeholder communication, and requirement gathering.</li><li>Develop clear project briefs and coordinate cross-functional teams.</li><li>Support timely delivery, performance reporting, and client satisfaction.</li></ul></article>
+      <article class="job reveal"><div class="job-top"><div><h3>Academic Counselor</h3><div class="company">Smart Study Australia</div></div><div class="date">Aug 2025 – Jun 2026</div></div><ul><li>Advised students on Australian education pathways and course selection.</li><li>Supported admissions, applications, and documentation follow-ups.</li><li>Coordinated with partner universities and managed student communications.</li></ul></article>
+      <article class="job reveal"><div class="job-top"><div><h3>Sales Executive</h3><div class="company">Mind Mapper Bangladesh</div></div><div class="date">Jul 2025 – Jun 2026</div></div><ul><li>Engaged prospective clients and responded to service inquiries.</li><li>Supported lead conversion through structured follow-ups and internal coordination.</li><li>Maintained sales records and tracked customer interactions.</li></ul></article>
+      <article class="job reveal"><div class="job-top"><div><h3>Business Development Intern</h3><div class="company">Zaynax Health</div></div><div class="date">Sep 2024 – Mar 2025</div></div><ul><li>Conducted market and lead research to identify prospective clients.</li><li>Supported outreach, follow-ups, and business development communication.</li><li>Assisted in preparing pitch materials and partnership proposals.</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="kicker">04 / Selected work</div><div><h2 class="section-title">The kind of work I help bring to life.</h2><p class="section-intro">These are portfolio-ready project categories based on my professional experience. Add approved, real examples and visuals to each section before sharing this portfolio as a case-study collection.</p></div></div>
+    <div class="project-grid">
+      <article class="project reveal"><div class="project-art">01</div><div><div class="project-label">Client Services · Digital Agency</div><h3>From client needs to clear briefs.</h3><p>Turning conversations and requirements into structured project briefs, coordinating teams, and supporting delivery.</p><small>Suggested evidence: anonymized brief, project timeline, deliverable sample.</small></div></article>
+      <article class="project reveal"><div class="project-art">02</div><div><div class="project-label">Research · Business Development</div><h3>Finding the right opportunities.</h3><p>Researching potential clients and partnership opportunities, then supporting outreach and follow-up.</p><small>Suggested evidence: sample competitor map, prospecting framework, research summary.</small></div></article>
+      <article class="project reveal"><div class="project-art">03</div><div><div class="project-label">Sales · Customer Engagement</div><h3>Building momentum through follow-up.</h3><p>Supporting lead conversion with consistent communication, customer interaction tracking, and internal coordination.</p><small>Suggested evidence: sanitized lead tracker, follow-up workflow, reporting sample.</small></div></article>
+      <article class="project reveal"><div class="project-art">04</div><div><div class="project-label">Events · Stakeholder Coordination</div><h3>Helping people come together.</h3><p>Supporting event planning, logistics, and stakeholder coordination through university leadership activities.</p><small>Suggested evidence: event poster, event photos, planning checklist.</small></div></article>
+    </div>
+    <p class="note">Confidentiality: remove personal data, client names, student information, and internal business details from any samples before publishing.</p>
+  </div>
+</section>
+
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="kicker">05 / How I work</div><div><h2 class="section-title">A clear process keeps good work moving.</h2></div></div>
+    <div class="process reveal">
+      <div class="step"><div class="step-no">01</div><h3>Understand</h3><p>Clarify goals, audience, requirements, and constraints.</p></div>
+      <div class="step"><div class="step-no">02</div><h3>Organize</h3><p>Turn information into briefs, priorities, and next steps.</p></div>
+      <div class="step"><div class="step-no">03</div><h3>Coordinate</h3><p>Keep stakeholders informed and work aligned to timelines.</p></div>
+      <div class="step"><div class="step-no">04</div><h3>Review</h3><p>Track progress, check deliverables, and identify improvements.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="kicker">06 / Skills</div><div><h2 class="section-title">Strong foundations. Always learning.</h2></div></div>
+    <div class="skills-grid reveal">
+      <div><h3>Core skills</h3><div class="skill-list"><span class="skill">Market research</span><span class="skill">Competitive analysis</span><span class="skill">Promotional support</span><span class="skill">Social media outreach</span><span class="skill">Client engagement</span><span class="skill">Lead research</span><span class="skill">Stakeholder coordination</span><span class="skill">Sales pipeline support</span><span class="skill">CRM fundamentals</span><span class="skill">MS Excel & reporting</span></div></div>
+      <div><h3>Communication</h3><div class="skill-list"><span class="skill">English — Fluent</span><span class="skill">Bengali — Native</span></div><h3 style="margin-top:30px">Working style</h3><div class="skill-list"><span class="skill">Structured follow-up</span><span class="skill">Clear documentation</span><span class="skill">Cross-team coordination</span><span class="skill">Client-focused thinking</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="education">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="kicker">07 / Education & leadership</div><div><h2 class="section-title">Business foundations with hands-on leadership experience.</h2></div></div>
+    <div class="education-grid reveal">
+      <article class="edu"><div class="year">2022 – 2026</div><h3>Bachelor of Business Administration</h3><p>BRAC University</p></article>
+      <article class="edu"><div class="year">2019</div><h3>HSC · Business Studies</h3><p>Govt. Pioneer Women’s College · GPA 5.00/5.00</p></article>
+      <article class="edu"><div class="year">2017</div><h3>SSC · Business Studies</h3><p>Govt. Pioneer Women’s College · GPA 5.00/5.00</p></article>
+      <article class="edu"><div class="year">Leadership</div><h3>BRAC University Business and Economics Forum</h3><p>Senior Executive – Event Management; HR and Admin – Manager. Experience included event planning, logistics, stakeholder coordination, recruitment, and administrative documentation.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal"><div class="eyebrow">Let’s connect</div><h2>Good work starts with a conversation.</h2><p>Interested in marketing, client services, business development, or project coordination opportunities? I’d be glad to connect.</p></div>
+    <div class="contact-links reveal"><a href="mailto:christinamariadcosta2095@gmail.com">christinamariadcosta2095@gmail.com ↗</a><a href="tel:+8801992300484">+880 1992-304848 ↗</a><span>Dhaka, Bangladesh</span></div>
+  </div>
+</section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Christina Maria D’costa</span><span>Marketing · Client Services · Business Development</span><a href="#home">Back to top ↑</a></footer>
+<script>
+const toggle=document.getElementById('menuToggle');
+const nav=document.getElementById('nav');
+toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'×':'☰';});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
